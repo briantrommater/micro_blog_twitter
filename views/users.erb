@@ -1,0 +1,51 @@
+
+
+<div class="usersMain">
+    <div class="usersContent">
+        <hr>
+        <div class="usersheader">
+            <h4>See other users</h4> 
+        </div>
+        <hr>
+        <div class='all'>
+            <% if @users%>
+                <% @users.each do |i| %>
+                    <a href="/users/<%= i.user_name %>"> <%= i.user_name %></a>
+                <br>
+                <% end %>
+            <% else %> 
+                
+            <% end %>
+        </div>
+
+        <div class="descriptions">
+            <div class="user_user">
+            <table style="width:70%">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>    
+                </tr>
+                <tr>
+                    <td><%= @name %></td>
+                    <td><%= @name_email %></td>
+                </tr>
+                
+            </table>
+            <div class="usersheader">
+                <h4> All user post </h4>
+            </div>
+            </div>
+            <div class="user_post">
+                <% if @name_post%>
+                    <% @name_post.each do |i| %>
+                        <%= i.post%></a> 
+                    <br>
+                    <% end %>
+                <% else %> 
+                    
+                <% end %>
+            </div>
+        
+        </div>
+    </div>
+</div>

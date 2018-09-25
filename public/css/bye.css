@@ -1,0 +1,44 @@
+byeMain {
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+hr {
+    border: none;
+    height: 10px;
+}
+
+.byeContent {
+    width: 95%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+@media only screen and (min-width: 400px) {
+    byeMain {
+        width: 400px; 
+    }
+    
+    .byeContent {
+        width: 400px; 
+    }
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+    .byeContent {
+        width: 80%;
+    }
+ 
+}

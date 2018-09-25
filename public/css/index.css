@@ -1,0 +1,44 @@
+indexMain {
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+hr {
+    border: none;
+    height: 10px;
+}
+
+.indexContent {
+    width: 95%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+@media only screen and (min-width: 400px) {
+    indexMain {
+        width: 400px; 
+    }
+    
+    .indexContent {
+        width: 400px; 
+    }
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+    .indexContent {
+        width: 80%;
+    }
+ 
+}

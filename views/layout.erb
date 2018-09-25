@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/index.css">
+     <link rel="stylesheet" href="css/signin.css">
+     <link rel="stylesheet" href="css/signup.css">
+     <link rel="stylesheet" href="css/home.css">
+     <link rel="stylesheet" href="css/profile.css">
+     <link rel="stylesheet" href="css/users.css">
+     <link rel="stylesheet" href="css/user.css">
+     <link rel="stylesheet" href="css/bye.css">
+      <style>
+      * { 
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.twtclone { 
+    width: 275px;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+hr {
+    border: none;
+    height: 10px;
+}
+
+.postHeader {
+    width: 270px; 
+    color: white; 
+}
+
+.postTitle {
+    height: 40px;
+    width: 100%;
+    background-color: #29487d;;
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.postNameProfile {
+    height: 30px;
+    width: 100%;
+    color: black;
+    padding-top: 7px;
+    position: relative;
+    background-color: white;
+    border-bottom: solid #29487d 1px; 
+}
+
+.postName {
+    position: absolute;
+    left: 10px;  
+}
+.xpostProfile {
+    position: absolute;
+    right: 80px;
+}
+
+.xsignOut {
+    position: absolute;
+    right: 15px;
+} 
+
+body {
+    background-color: #e9ebee;
+}
+/* background-color: #e9ebee;  */
+
+/*  */
+.sidePostSide {
+    display: inline-block;
+    display: none;
+    border-radius: 8px;
+    margin-left: 15px; 
+    background-color: white;
+}
+
+
+.postMain { 
+    width: 270px; 
+    padding: 10px;
+    display: inline-block; 
+    border-radius: 8px; 
+    background-color: white; 
+}
+
+.newPost {
+    width: 97%;
+    height: 35px; 
+    display: block; 
+}
+
+
+#postInput {
+   width: 70%;
+}
+
+#postButton {
+    padding: 7px; 
+    float: right; 
+    color: white;
+    border-radius: 5px; 
+    background-color: #3999dc;
+    border: solid 1px #3999dc;
+}
+
+.postPost {
+    width: 97%;  
+    display: block;  
+
+}
+
+.userPost {
+    padding: 10px;
+    width: 100%;  
+    display: block; 
+}
+
+.postTimeUser { 
+    padding: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%; 
+    height: 30px;
+    border-top: solid black 1px; 
+}
+
+.postTime {
+    float: left; 
+}
+
+.PostUserName {
+    float: right; 
+    /* border: solid red; */
+
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: #29487d;
+    padding-top: 14px; 
+    margin-top: 10px; 
+}
+
+a {
+    text-decoration: none;
+}
+
+.postTitle :h3 {
+    text-decoration: none;
+}
+
+a.homeTitle:link {color:#ffffff;}
+a.homeTitle:visited {color:#ffffff;}
+a.homeTitle:hover {color:#ffffff;}
+ 
+
+
+@media only screen and (min-width: 400px) {
+    .twtclone { 
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+    .postHeader {
+        width: 100%; 
+    }
+    
+    .postTitle {
+        height: 45px; 
+        padding-top: 15px;  
+    }
+
+    .postName { 
+        left: 15px;  
+    }
+    .postProfile {
+        position: absolute;
+        right: 15px;    
+    }
+    
+    .postMain { 
+        width: 400px; 
+        padding: 20px;    
+    }
+    
+    .newPost {
+        margin: 5px;  
+    }
+    
+    
+    #postInput {
+       width: 80%;
+       height: 30px;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    .twtclone { 
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    .postHeader {
+        width: 100%; 
+    }
+    
+    .postTitle {
+        height: 50px; 
+        padding-top: 20px;  
+    }
+
+    .postName { 
+        left: 25px;  
+    }
+    .postProfile {
+        position: absolute;
+        right: 25px;    
+    }
+    
+    .postMain { 
+        width: 600px; 
+        padding: 20px;    
+    }
+    
+    .newPost {
+        margin: 5px;  
+    }
+    
+    
+    #postInput {
+       width: 80%;
+       height: 30px;;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 900px) {
+    .twtclone { 
+        width: 905px;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+    .postHeader {
+        width: 100%; 
+       
+    }
+
+    .sidePostSide  { 
+        width: 29%;
+        /* height: 500px; */
+        display: inline-block; 
+        vertical-align: top;
+        padding: 5px;
+    }
+
+    .sidePostHeader {
+        width: 100%;
+        height: 35px;
+        padding-top: 10px;
+        text-align: center;
+        border-radius: 5px;
+        background-color: #29487d;;
+        color: white;
+    }
+    
+    .sideUserInfo { 
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5px;
+        border-bottom : solid gray 1px;
+    }
+        
+    .sideUserName {
+        display: inline-block;
+        width: 70%;
+        height: 40px;
+        vertical-align: top;
+        padding: 5px; 
+    }
+
+    .SideFollow {
+        display: inline-block;
+        width: 28%;
+        height: 40px;
+        vertical-align: top; 
+        text-align: right;
+        padding: 3px;
+    }
+
+    #folloBtn {
+     padding: 5px; 
+     background-color: #3999dc;
+     border: solid 1px #3999dc;
+     border-radius: 5px; 
+     color: white;
+
+    }
+
+    
+    .postMain { 
+        width: 600px; 
+        vertical-align: top;
+        margin-left: 10px;     
+    }
+
+    .postNameProfile {
+        margin-bottom: 10px;
+    }
+
+    .postName { 
+        left: 35px;  
+    }
+    .postProfile { 
+        right: 45px;    
+    }
+    
+    .newPost {
+        margin: 5px;  
+    }
+    
+    
+    #postInput {
+       width: 80%;
+       height: 30px;;
+    }
+
+
+
+  
+
+
+}
+
+
+
+
+@media only screen and (min-width: 1000px) {
+    .twtclone {
+        width:1000px ;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    .sidePostSide  { 
+       margin-left: 45px;
+    }
+}
+
+        usersMain {
+            width: 270px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 30px; 
+            }
+
+        hr {
+            border: none;
+            height: 10px;
+        }
+
+        .usersContent {
+            width: 95%; 
+            margin-left: auto;
+            margin-right: auto;
+            padding: 30px;
+            border-radius: 8px;
+            background-color: white;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 10px;  
+        }
+
+        .all { 
+            width: 95%;
+            display: inline-block;
+        }
+
+        .descriptions { 
+            width: 95%;
+            display: inline-block;
+            
+        } 
+
+        .user_user {
+            display: block;
+            text-align: center;
+            margin-bottom: 3px;
+            padding-bottom: 3px; 
+        }
+
+        .usersheader {
+            height: 35px;
+            padding-top: 10px;
+            text-align: center;
+            border-radius: 5px;
+            background-color: #29487d;
+            color: white;
+        }
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .user_name {
+            display: inline-block;
+        }
+
+        .user_email {
+            display: inline-block; 
+        }
+
+        .user_post {
+            display: block;
+        }
+
+
+        @media only screen and (min-width: 400px) {
+            .usersMain {
+                width: 95%; 
+            }
+            
+            .usersContent {
+                width: 95%; 
+            }
+        }
+
+
+
+        @media only screen and (min-width: 600px) {
+            .usersContent {
+                
+            }
+
+            .all { 
+                width: 150px;
+                display: inline-block;
+                margin-left: 10px;
+                vertical-align: top;
+            }
+            
+            .descriptions { 
+                width: 60%;
+                display: inline-block;
+                margin-left: 5%;
+                vertical-align: top;
+            } 
+
+        
+        }
+      </style>
+      
+      
+</head>
+<body>
+    <div class="twtclone"> 
+        <div class="postHeader">
+            <div class="postTitle">
+                <a class="homeTitle" href="/home"><h3>Twitter</h3> </a> 
+            </div>
+            <div class="postNameProfile">
+                <div class="postName">
+                 
+                    <p>Welcome </p>
+                </div> 
+                <div class="xpostProfile">
+                    <p><a href="/users">  Users </a> </p>
+                </div>
+                <div class="xsignOut">
+                    <p><a href="/">SignOut</a> </p>
+                </div>
+              
+ 
+            </div>
+        </div>
+
+        <!--  -->
+        <%= yield %>
+        <!--  -->
+        
+        <div class="footer">
+            <h3>Twitter</h3> 
+        </div>          
+        
+    </div>
+  
+</body>
+</html>

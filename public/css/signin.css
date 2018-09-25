@@ -1,0 +1,54 @@
+signinMain {
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+hr {
+    border: none;
+    height: 10px;
+}
+
+.signinContent {
+    width: 95%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.labels { 
+    display: inline-block; 
+    text-align: right;
+}
+
+.inputs { 
+    padding-left: 10px;
+    display: inline-block; 
+}
+
+
+@media only screen and (min-width: 400px) {
+    signinMain {
+        width: 400px; 
+    }
+    
+    .signinContent {
+        width: 400px; 
+    }
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+    .signinContent {
+        width: 80%;
+    }
+ 
+}

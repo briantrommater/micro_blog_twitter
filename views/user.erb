@@ -1,0 +1,77 @@
+
+
+<div class="userMain">
+    <div class='userInner'>
+      <div class="userContent">
+          <div class='profile'>
+              <hr>
+            <div class="usersheader">
+              <h4 style= "text-align: center">Edit your profile </h4> 
+            </div>
+            <hr>
+          <hr>
+           
+            <hr>
+            <form method="POST" action="/update">
+              <div class='labels'>
+                  <p> Your email: </p> 
+                    <hr>
+                  <P> Your Username: </p> 
+                  <hr>
+                    <label for="email">Email</label>
+                  <hr>
+                    <label for="password">Password</label> 
+                  <hr>
+                    <label for="password">Password</label>
+              </div>
+             
+              <div class='inputs'>
+                  <%= @@Homeuseremail%> 
+                  <hr>
+                  <%= @@Homeusername%>
+                  <hr>
+                    <input type="text" name="email" placeholder="Email">
+                  <hr>
+                    <input type="password" name="password" placeholder="Password">
+                  <hr>
+                    <input type="password" name="re_password" placeholder="Password">
+                  <hr> 
+                    
+            
+              </div>  
+            <input type="submit">
+             </form>
+          </div>
+            <hr>
+          <div class='delete'> 
+            <hr>
+              <p>Delete Your Account</p>
+            <hr>
+              <form method="POST" action="/bye">
+                  <input type="submit">
+              </form>
+            <hr>
+          </div>       
+      </div> 
+
+      <div class='tweets'>
+            <hr>
+            <div class="usersheader">
+              <h4 style= "text-align: center">Your post </h4> 
+            </div>
+            <hr>
+        <% if @user_tweets %>
+            <% @user_tweets.each do |i| %>
+                <div class='HomeTwtBox'>
+                <div class="twt"><%= i.post%></div>
+                </div> 
+            <% end %>
+          <% else %>  
+          <% end %>
+      </div>
+      
+    </div>
+</div>
+
+ 
+ 

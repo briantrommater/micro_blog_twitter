@@ -1,0 +1,123 @@
+.userMain {
+    width: 270px; 
+    height: auto;  
+}
+
+hr {
+    border: none;
+    height: 10px;
+}
+
+.userContent {
+    width: 100%; 
+    border-radius: 8px;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px; 
+    display: inline-block; 
+}
+
+ 
+
+.labels {   
+    display: inline-block; 
+    text-align: right; 
+    vertical-align: top;
+}
+
+.inputs { 
+    text-align: left; 
+    padding-left: 10px;
+    display: inline-block;  
+    vertical-align: top;
+}
+
+.delete {
+    border-top: solid gray 1px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.tweets {
+    margin-top: 10px; 
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 8px;
+    margin-left: 10px;
+    background-color: white; 
+    display: inline-block;
+    width: 270px;  
+}
+
+.userInner{
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+
+  @media only screen and (min-width: 400px) {
+    .userMain {
+        width: 400px; 
+    }
+    
+    .userContent {
+        width: 395; 
+    }
+
+    .tweets {
+        width: 395px; 
+    }
+}
+
+
+ 
+@media only screen and (min-width: 600px) {
+    .userMain {
+        width: 100%; 
+    }
+    .userContent {
+        width: 280px;  
+        vertical-align: top; 
+    }
+
+    .tweets { 
+        width: 48%;
+        vertical-align: top;  
+    }
+} 
+
+
+@media only screen and (min-width: 700px) {
+    .userContent {
+        width: 280px;   
+    }
+
+    .tweets { 
+        width: 48%;  
+    }
+
+   
+} 
+
+
+
+@media only screen and (min-width: 900px) {
+    .userContent {
+        width: 300px; 
+        margin-left: 50px;
+    }
+
+    
+
+    .tweets { 
+        width: 55%; 
+        margin-left: 30px;
+        padding-left: 10px;  
+    }
+} 
+
+
+
+ 

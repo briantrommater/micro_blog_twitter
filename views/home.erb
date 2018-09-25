@@ -1,0 +1,70 @@
+ 
+ 
+ <div class='homeMain'>
+      <div class="useProfile">
+
+          <div class='profile'>
+            <hr>
+            <div class="usersheader">
+              <h4 style= "text-align: center">Your profile </h4> 
+            </div>
+            <hr>
+             
+                  <div class='labels'>
+                      <p> email: </p> 
+          
+                      <P> Username: </p> 
+                      <hr>
+                  </div>
+             
+                  <div class='inputs'>
+                      <%= @@Homeuseremail%> 
+                    <br>
+                      <%= @@Homeusername%>
+                      <hr>
+
+                  </div> 
+              <hr> 
+                   <p style= "text-align: center" >  <a href="/user">  Edit </a> </p>
+          </div>
+
+      </div>
+
+    <div class='homeContent'> 
+        <hr>
+            
+        <hr>
+             
+            <form method="POST" action="/home">
+              <hr>
+                <label for="tweet">Add a message</label>
+                <br>
+                  <textarea rows="3" cols="44" name="tweet" > </textarea>
+                  <br>
+                <input type="submit">
+              <hr>
+  
+            </form>
+              <% if @tweets %>
+                <% @tweets.each do |i| %>
+                  <div class='HomeTwtBox'>
+                  <div class='name'> </div> <div class="twt"><%= i.post%></div>
+                  </div> 
+                <% end %>
+              <% else %>
+              <% end %>  
+            
+
+    </div>
+ </div>
+
+
+ 
+ 
+ 
+
+
+
+     
+ 
+ 
